@@ -1,0 +1,29 @@
+:root{
+  --primary-color : #0FAE96;
+  --secondary-color : #511281;
+  --dark-color : #11011E;
+
+  --grey-font : #B6B6B6;
+  --white-font : #ECF1F0;
+}
+
+*, 
+*::after,
+*::before{
+  box-sizing: border-box;
+  /* background-color: var(--secondary-color); */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif, Arial;
+  color: #ECF1F0;
+  /* background: linear-gradient(to right, #12011F, #170129, #220131, #1E0128, #160121 ); */
+  background: linear-gradient(to right, #12011F, #150121, #140121, #130122, #11011F );
+}
+
+.wrapper {
+  max-width: 100vw;
+  margin: 0 auto;
+}

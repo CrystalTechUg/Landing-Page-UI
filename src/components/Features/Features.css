@@ -1,0 +1,222 @@
+*{
+    color: #ECF1F0;
+}
+
+.ftParentDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 186px; /* 989-560-243 =  */
+    /* background-color: blueviolet; */
+}
+
+.ftChildDiv{
+    width: 1260px;
+    height: 527px; /* Top 32 + Bottom 187 = 219 -> Total 246 -> 27 remaining */
+    /* background-color: blue; */
+    display: block;
+}
+
+.ftTopDiv{
+    text-align: center;
+    height: 115px;
+    /* background-color: brown; */
+}
+
+.ftTopDiv > :first-child{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+
+    font-size: 36px;
+    line-height: 44px;
+    color: #ECF1F0;
+    padding: 10px;
+    height:64px;
+}
+
+.ftTopDiv > :nth-child(2){
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #B6B6B6;
+
+    font-size: 18px;
+    line-height: 28.8px;
+    letter-spacing: 0em;
+    height:41px; 
+    padding: 6px;
+    /* background-color: yellow; */
+}
+
+
+/*  >>>> Bottom DIV <<<<  */
+
+.ftBottomDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 69px;
+    /* 24px also there */
+}
+
+.featureBox{
+    width: 297px;
+    height: 343px;
+    padding: 30px 30px 30px 28px;
+    border-radius: 18px;
+
+    border: 1px solid;
+    border-color: #FFFFFF0D; 
+    background: linear-gradient(to right,  #1D0E29, #1C062E, #1C062E);
+    
+    gap: 10px;
+    /* background-color: var(--secondary-color); */
+}
+
+.featureInfo{
+    width: 238px;
+    height: 283px;
+    gap: 38px;
+    /* background-color: green; */
+}
+
+
+.featureContent{
+    height: 221px;
+    margin-bottom: 37px; /* 27+10 */ 
+    /* background-color: brown; */
+}
+
+.featureContent>img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.featureContDiv{
+    width: 238px;
+    height: 114px;
+    margin-top: 22px;  /* 10+12*/
+    /* background-color: blueviolet; */
+}
+
+.featureContDiv > :first-child{
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.featureContDiv > :nth-child(2){
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #B6B6B6;
+}
+
+
+.featureLink{
+    width: 135px;
+    height: 24px;
+    padding-top: 4px;
+    /* background-color: black; */
+}
+
+.featureLink > a{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+
+a:hover{
+    color:#ECF1F0;
+}
+
+
+
+/*  Tablet media */
+@media screen and (min-width: 427px) and (max-width: 768px){
+    .ftParentDiv{
+        height: 135vh;
+        margin-top: 410px; /* 989-560-243 =  */
+        /* background-color: blueviolet; */
+    }
+    
+    .ftChildDiv{
+        width: 88%;
+        /* background-color: rgb(78, 78, 198); */
+    }
+
+    .ftTopDiv {
+        height: 13vh;
+        /* background-color: yellow; */
+    }
+
+    .featureBox{
+        margin-bottom : 55px;
+    }
+}
+
+/* Mobile Media */
+
+@media screen and (max-width: 426px){
+
+    .ftParentDiv{
+        height: 250vh;
+        margin-top: 800px; 
+        /* background-color: blue; */
+    }
+    
+    .ftChildDiv{
+        width: 88%;
+
+        /* background-color: rgb(78, 78, 198); */
+        display: block;
+    }
+
+    .ftTopDiv > :first-child {
+        font-size: 1.5rem;
+        line-height: 40px;
+        color: #ECF1F0;
+        padding: 10px;
+        height: 68px;
+    }
+
+    .ftTopDiv > :nth-child(2) {
+        font-size: 14px;
+        line-height: 28.8px;
+        letter-spacing: 0em;
+        height: 35px;
+        padding: 6px;
+        /* background-color: yellow; */
+    }
+
+
+    .ftBottomDiv{
+        width: 88vw;
+        height : 5%; 
+        display: grid;
+        grid-template-columns: 1fr ; 
+        gap: 2rem; 
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .featureBox{
+        margin: auto;
+    }
+
+}
