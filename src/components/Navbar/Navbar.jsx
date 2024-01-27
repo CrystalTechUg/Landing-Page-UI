@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import languages from '../../icons/languages.svg';
 
-const Navbar = () => {
+const Navbar = ({ setShowModal }) => {
     return (
       <>
         <header className="navParentDiv">
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </select>
               </div>
 
-              <button className='loginBtn' >Login</button>
+              <button onClick={() => setShowModal(true)} className='loginBtn'>Login</button>
             </div>
           </div>
 
